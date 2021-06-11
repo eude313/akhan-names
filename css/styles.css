@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.main-flex{
+    display: flex;
+}
 body{
     width: 100%;
     height: 100vh;
@@ -10,4 +13,14 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+.content{
+    border: transparent;
+    width: 88%;
+    box-shadow: inset 0 0 10px #000000;
+    height: 80vh;
+    margin: 6rem 8rem;
+    background-image: url(/image/beach.jpg);
+    border-radius: 20px;
 }
