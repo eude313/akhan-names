@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
         <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
         <title>akhan-names</title>
     </head>
     <body>
@@ -16,10 +16,10 @@
             <div class="akan">
                 <h1>AKAN<span class="name-1"> NAMES</span></h1>
             </div>
-            <div class="web">
-                <p class="para-1">A web application that takes a user's birthday and calculates the day of the week <br>they were born and then depending on their gender outputs their akan Names.<br> Akan names are derived from Ghanian culture. Frequently in Ghana, children are<br> given their first name as a 'day name' which corresponds to the day in the week<br> they were born.</p>
-            </div>
-            <div class="main-flex farm">
+            <div class="main-flex first-cont">
+                <div class="web">
+                    <p class="para-1">A web application that takes a user's birthday and calculates the day of the week <br>they were born and then depending on their gender outputs their akan Names.<br> Akan names are derived from Ghanian culture. Frequently in Ghana, children are<br> given their first name as a 'day name' which corresponds to the day in the week<br> they were born.</p>
+                </div>
                 <div class="main-flex name-cont">
                     <div class="female-con">
                         <H2>FEMALE</H2>
@@ -49,14 +49,21 @@
 
                 </div>
                 <div>
-                    <label for="date-of-birth">Date of birth</label><br><br>
-                    <input type="text" id="birthday" name="birthday" placeholder="mm/dd/yyy"><br><br>
-                    <input type="submit" value="Submit">
+                    <form name="eudes">
+                        <label for="date-of-birth">Date of birth</label><br><br>
+
+                        <input type="date" id="birthday" name="birthday" placeholder="mm/dd/yyy"><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                        
 
                 </div>
+                
             </div>
+
         </div>
         
-        
     </body>
+
 </html>
