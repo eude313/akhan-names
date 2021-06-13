@@ -31,12 +31,13 @@ body{
     height: 80vh;
 }
 .akan{    
-    position: relative;
-    top: 0rem;
-    left: 0rem;
+    position: absolute;
+    top: 10rem;
+    left: 13rem;
+    width: 36%;
 }
 .akan, h1{
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 900;
     color: ivory;
     text-shadow: 3px 2px 2px black;
@@ -50,9 +51,9 @@ body{
     text-shadow: 3px 2px 2px black;
 }
 .web{
-    position: relative;
-    top: 18rem;
-    left: 10px;
+    position: absolute;
+    top: 23rem;
+    left: 10rem;
     font-size: 30px;
 
 }
@@ -64,21 +65,21 @@ body{
 .name-cont{
     width: 47%;
     height: 34vh;
-    border: 5px solid;
     padding-left: 2rem;
     margin-top: 25rem;
 }
 .female-cont, h2{
     position: relative;
-    top: 50rem;
+    top: 15rem;
+    color: aliceblue;
+}
+.tag{
+    margin-right: 40px;
 }
 .pop{
-    border: transparent;
-    border-radius: 20px;
-    box-shadow: 3px 3px 2px rgb(75, 75, 74);
     width: 50%;
     height: 50vh;
     position: relative;
-    top: -36rem;
-    left: 30rem;
+    top: -38rem;
+    left: 29rem;
 }

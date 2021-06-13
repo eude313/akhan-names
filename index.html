@@ -26,9 +26,9 @@
             </div>
         </div>
         <div class="main-1">
-            <div class="main-flex name-cont">
+            <div class="main-flex name-cont ">
                 <div class="female-con">
-                    <H2>FEMALE</H2>
+                    <H2 class="tag">FEMALE</H2>
                     <ul>
                         <li>Sunday: Akosua</li>
                         <li>Monday: Adwoa</li>
@@ -56,15 +56,19 @@
             </div>
             <div class="pop">
                 <form name="eudes" onsubmit="return false">
-                    <div class="">
+                    <div class="dates">
                         <label for="date of birth">Date of birth</label><br><br>
 
-                        <input type="date" id="birthday" name="birthday" placeholder="mm/dd/yyy"><br><br>
+                        <input type="date"
+                        class="dob"
+                         id="birthday" name="birthday" placeholder="mm/dd/yyy"><br><br>
                         <div class="error" id="invalidDate"></div>
                     </div>
                     <div class="gender">
                         <input type="radio" name="gender" value="female" id="female"> female
+                        <br>
                         <input type="radio" name="gender" value="male" id="male"> male
+                        <br><br>
                         <div class="error" id="invalidGender"></div>
                     </div>
                     <input type="submit" name="submit" class="btn btn-warning" value="Submit" onclick="names()">
@@ -76,7 +80,7 @@
         </div>
 
     </div>
-    <script src="/js/scrip.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
-
+<script src="js/scrip.js"></script>
 </html>

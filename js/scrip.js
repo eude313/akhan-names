@@ -1,8 +1,9 @@
 // created a function for names
 function names(){
+
     let = document.getElementById("birthday");
-    let gender = document.compareDocumentPosition.gender;
-    let dbir = birthday.value;    
+    let gender = document.eudes.gender;
+    let dbirth = birthday.value;    
     let date = newDate(document.getElementById(birthday).value);
     let theday = date.getDay();
  // created arrays that hold the akans name and weekdays
@@ -12,14 +13,13 @@ function names(){
     let valid = false;
     
     // using DOM method i called for the div container
-    let container = document.getElementById("container");
+    let answer = document.getElementById('answer');
     // created an if statement if usser placed an invalid information
-    if(birthday == "");{
+    if(birthday == ""){
         dateError.innerHTML = "invalid response";
         birthday.focus();
         return false;
-    }
-    else{
+    }else{
         for(var i = 0;i<gender.length;i++){
             if(gender[i].checked){
                 valid = true;
@@ -29,9 +29,32 @@ function names(){
      // created an else statement if a usser key's in right information
        if(valid){
         if(gender[i].value == "male"){
-            display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]; 
+            display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + male[theday]; 
+        }else{
+            if(gender[i].value == "female"){
+                display.innerHTML = "You were born on a "+day+".<br> "+"Your Akan Name is " + female[theday];
+            }
+        }
+        }else{
+            invalidGender.innerHTML = "input gender"
+            return false;
         }
 
     }
+
+}
+function reload(){
+    document.getElementById('invalidDate').innerHTML = "";
+    decodeURIComponent.getElementById(invalidGender).innerHTML = "";
+    document.getElementById('answer').innerHTML = "";
+    birthday.value = "";
+    birthday.style.backgroundColor = "white";
+    birthday.style.border = "none";
+    birthday.style.borderBottom = "2px solid #ff5722";
+    var hit = document.getElementByName("gender");
+
+    for(var j=0; j<gender.length; j++)
+    gender[j].checked = false;
+
 
 }
