@@ -26,12 +26,17 @@ body{
     color: goldenrod;
     text-shadow: 3px 2px 2px black;
 }
-.akan{
-    margin: 10px 20px 10px 20rem;
-    padding: 3rem 0px 0px 0px;
+.first-cont{
+    width: 40%;
+    height: 80vh;
+}
+.akan{    
+    position: relative;
+    top: 0rem;
+    left: 0rem;
 }
 .akan, h1{
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 900;
     color: ivory;
     text-shadow: 3px 2px 2px black;
@@ -44,6 +49,36 @@ body{
     color: goldenrod;
     text-shadow: 3px 2px 2px black;
 }
-.form{
-    margin-left: ;
+.web{
+    position: relative;
+    top: 18rem;
+    left: 10px;
+    font-size: 30px;
+
+}
+.main-1{
+    width: 60%;
+    height: 80vh;
+    margin-left: 5px;
+}
+.name-cont{
+    width: 47%;
+    height: 34vh;
+    border: 5px solid;
+    padding-left: 2rem;
+    margin-top: 25rem;
+}
+.female-cont, h2{
+    position: relative;
+    top: 50rem;
+}
+.pop{
+    border: transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgb(75, 75, 74);
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    top: -36rem;
+    left: 30rem;
 }
