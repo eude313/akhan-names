@@ -1,7 +1,7 @@
 // created a function for names
 function names(){
     let = document.getElementById("birthday");
-    let sex = document.compareDocumentPosition.sex;
+    let gender = document.compareDocumentPosition.gender;
     let dbir = birthday.value;    
     let date = newDate(document.getElementById(birthday).value);
     let theday = date.getDay();
@@ -13,6 +13,13 @@ function names(){
     
     // using DOM method i called for the div container
     let container = document.getElementById("container");
-    
+    // created an if statement if usser placed an invalid information
+    if(birthday == "");{
+        dateError.innerHTML = "invalid response";
+        birthday.focus();
+        return false;
+    }
+   
+
 
 }
