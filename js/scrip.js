@@ -18,13 +18,20 @@ function names(){
         dateError.innerHTML = "invalid response";
         birthday.focus();
         return false;
-    }else{
-       for( let i = 0; i <gender.length; i++);
-       if(gender[i].checked){
-       valid = true;
-    //    break;
+    }
+    else{
+        for(var i = 0;i<gender.length;i++){
+            if(gender[i].checked){
+                valid = true;
+                break;
+            }
         }
-    }// created an else statement if a usser key's in right information
+     // created an else statement if a usser key's in right information
+       if(valid){
+        if(gender[i].value == "male"){
+            display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]; 
+        }
 
+    }
 
 }

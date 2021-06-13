@@ -49,11 +49,27 @@
 
                 </div>
                 <div>
-                    <form name="eudes">
-                        <label for="date-of-birth">Date of birth</label><br><br>
+                    <form name="eudes" onsubmit="return false">
+                        <div class="">
+                            <label for="date of birth">Date of birth</label><br><br>
 
-                        <input type="date" id="birthday" name="birthday" placeholder="mm/dd/yyy"><br><br>
-
+                            <input type="date" id="birthday" name="birthday"
+                            
+                            placeholder="mm/dd/yyy"><br><br>
+                            <div  class="error" id="invalidDate"></div>
+                        </div>
+                        <div class="gender">
+                           <input type="radio" name="gender"
+                           value="female"
+                           id="female"
+                           > female
+                           <input type="radio"
+                           name="gender"
+                           value="male"
+                           id="male"
+                           > male
+                           <div class="error" id="invalidGender"></div>
+                        </div>
                         <input type="submit" value="Submit">
                     </form>
                         
