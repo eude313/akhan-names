@@ -2,13 +2,14 @@
 function names(){
 
     let birthday = document.getElementById("birthday");
+
     let gender = document.eudes.gender;
-    let dbirth = birthday.value;    
+
     let date = new Date(document.getElementById('birthday').value);
     let theday = date.getDay();
  // created arrays that hold the akans name and weekdays
     let week =  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let day = week[birthday];
+    let day = week[theday];
     let female =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     let male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     let valid = false;
@@ -38,7 +39,7 @@ function names(){
             }
         }
         }else{
-            invalidGender.innerHTML = "input gender"
+            invalidGender.innerHTML = "input gender";
             return false;
         }
 
@@ -47,12 +48,10 @@ function names(){
 }
 function reload(){
     document.getElementById('invalidDate').innerHTML = "";
+    document.getElementById('invalidGender').innerHTML = "";
     document.getElementById('answer').innerHTML = "";
     birthday.value = "";
-    var hit = document.getElementByName("gender");
-
-    for(var j=0; j<gender.length; j++)
+    for(let j=0; j<gender.length; j++)
     gender[j].checked = false;
-
 
 }
